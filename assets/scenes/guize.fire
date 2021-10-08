@@ -171,7 +171,7 @@
       "array": [
         0,
         0,
-        227.7646811953074,
+        236.41890495201648,
         0,
         0,
         0,
@@ -328,7 +328,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
+      "width": 50,
       "height": 40
     },
     "_anchorPoint": {
@@ -340,8 +340,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        225.004,
-        405.53,
+        -272.927,
+        394.929,
         0,
         0,
         0,
@@ -393,7 +393,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 100,
+      "width": 50,
       "height": 40
     },
     "_anchorPoint": {
@@ -446,7 +446,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "213e2457-2779-45de-9925-3f91fb636257"
+      "__uuid__": "3b77eb91-f9d1-4098-8416-483cdfb04baa"
     },
     "_type": 1,
     "_sizeMode": 0,
@@ -553,7 +553,7 @@
       "a": 200
     },
     "_N$normalSprite": {
-      "__uuid__": "213e2457-2779-45de-9925-3f91fb636257"
+      "__uuid__": "3b77eb91-f9d1-4098-8416-483cdfb04baa"
     },
     "_N$pressedSprite": {
       "__uuid__": "e9ec654c-97a2-4787-9325-e6a10375219a"
@@ -611,7 +611,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "e6fa5890-8099-4985-8ee7-7c54ca7ad0d5"
+      "__uuid__": "9ff3ad53-9060-44fc-ab64-80572cff6f6a"
     },
     "_type": 0,
     "_sizeMode": 0,

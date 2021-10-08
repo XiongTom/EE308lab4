@@ -87,7 +87,7 @@ cc.Class({
 
 
 
-        if(value > 7 || value < 1){
+        if(value > 10 || value < 1){
             return;
         }
         this.now_value = value;

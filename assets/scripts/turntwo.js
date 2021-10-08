@@ -74,7 +74,7 @@ cc.Class({
 
 
     roll_tonum(value){
-        if(value > 6 || value < 1)
+        if(value > 10 || value < 1)
             return;
         if(value < this.now_value){
             var x = value;
