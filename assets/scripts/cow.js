@@ -8,6 +8,10 @@ const cow_skin = cc.Class({
     }
 });
 
+window.roll = {
+    touzi:null,
+};
+
 cc.Class({
     extends: cc.Component,
 
@@ -21,23 +25,34 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        this.intervalTime = 0;
+
     },
 
     start () {
-
-    },
-
-
-    update (dt) {
-        this.intervalTime += dt;
-        let index = Math.floor(this.intervalTime / 0.2);
-        
-        index = index % 5;
-        //cc.log(index);
+        var start = 0;
         let cowSet = this.cow_set[0];
-
         let sprite = this.node.getComponent(cc.Sprite);
-        sprite.spriteFrame = cowSet.cows[index];
+        roll.touzi = setInterval(()=>{
+            if(start > 4)
+                start = 0;
+            sprite.spriteFrame = cowSet.cows[start]; 
+            start++;
+         }, 80);
+
+         
     },
+
+
+    // update (dt) {
+    //     this.intervalTime += dt;
+    //     let index = Math.floor(this.intervalTime / 0.2);
+        
+    //     index = index % 5;
+    //     //cc.log(index);
+    //     let cowSet = this.cow_set[0];
+
+    //     let sprite = this.node.getComponent(cc.Sprite);
+    //     sprite.spriteFrame = cowSet.cows[index];
+
+    // },
 });

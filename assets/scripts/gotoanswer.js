@@ -30,7 +30,8 @@ cc.Class({
 
     onLoad () {},
     toanswer:function(){
-        cc.director.loadScene("playing")
+        cc.director.loadScene("playing"),
+        clearInterval(roll.touzi);
     },
     start () {
 

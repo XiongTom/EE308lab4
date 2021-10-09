@@ -5,6 +5,10 @@ window.member = {
 window.paiming = {
     nums:[0,0,0,0,0,0,0,0,0,0],
 };
+
+window.TheNum = {
+    num: null,
+};
 cc.Class({
     extends: cc.Component,
     properties: {
@@ -19,6 +23,10 @@ cc.Class({
     onLoad: function () {
         // ...
         member.num = 2;
+        for(var i = 0; i < 10; i++){
+            paiming.nums[i] = 0;
+        }
+        TheNum.num = 0;
     },
     
     start() { 

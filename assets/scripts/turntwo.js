@@ -95,11 +95,7 @@ cc.Class({
             this.contentc.runAction(m);
             this.now_value = value;
         }
-    },
-    
-    playing(){
-        cc.log("dddddd");
-    },
+    }
 
 
     // update (dt) {},

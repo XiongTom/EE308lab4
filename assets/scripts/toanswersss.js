@@ -15,6 +15,7 @@ cc.Class({
     onLoad () {},
     to:function(){
         cc.director.loadScene("playingtwo");
+        clearInterval(roll.touzi);
     },
     start () {
 

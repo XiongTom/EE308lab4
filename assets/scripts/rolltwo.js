@@ -4,9 +4,7 @@
 //  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
 // Learn life-cycle callbacks:
 //  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
-window.TheNum = {
-    num: null,
-};
+
 
 
 
@@ -17,7 +15,7 @@ cc.Class({
 
     },
 
-    countRank(value){
+    onLoad:function(){
 
     },
 
@@ -49,7 +47,7 @@ cc.Class({
         if(TheNum.num > numMax){
             TheNum.num = 1;
         }
-        
+        var g = TheNum.num;
 
     //  生成随机数据
     var a = Math.floor(Math.random() * 6) + 1,
@@ -58,8 +56,8 @@ cc.Class({
         d = Math.floor(Math.random() * 6) + 1,
         e = Math.floor(Math.random() * 6) + 1,
         f = Math.floor(Math.random() * 6) + 1;
-        g = TheNum.num;
-        cc.log(g);
+
+       
         
         cc.find("Canvas/rolling").getComponent("turnaround").set_value(a);
         cc.find("Canvas/rollingtwo").getComponent("turntwo").set_value(b);
@@ -236,4 +234,3 @@ cc.Class({
     
  
 });
-
